@@ -5,7 +5,8 @@ import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 st.set_page_config(page_title="Skin Cancer Detector", page_icon="🩺", layout="centered")
-st.title("🩺 Skin Lesion Classifier (Melanoma vs Non-melanoma)")
+# st.title("🩺 Skin Lesion Classifier (Melanoma vs Non-melanoma)")
+st.title("✅ Loaded MY streamlit_app.py")
 st.caption("Educational demo only — NOT for diagnosis.")
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -84,3 +85,4 @@ if uploaded:
 
 st.divider()
 st.markdown("**Model:** EfficientNet-B0 (timm). Trained on HAM10000. *Educational demo only.*")
+
